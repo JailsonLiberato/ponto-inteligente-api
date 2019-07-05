@@ -17,7 +17,6 @@ import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import br.com.jailsonliberato.pontointeligente.api.entities.Funcionario;
-import br.com.jailsonliberato.pontointeligente.api.entities.Lancamento;
 import br.com.jailsonliberato.pontointeligente.api.repositories.FuncionarioRepository;
 
 @RunWith(SpringRunner.class)
