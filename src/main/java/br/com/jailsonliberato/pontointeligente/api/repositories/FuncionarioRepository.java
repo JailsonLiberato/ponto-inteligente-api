@@ -14,4 +14,5 @@ public interface FuncionarioRepository extends JpaRepository<Funcionario, Long>{
 	
 	Funcionario findByCpfOrEmail(String cpf, String email);
 
+
 }

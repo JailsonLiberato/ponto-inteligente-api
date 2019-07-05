@@ -15,10 +15,10 @@ import br.com.jailsonliberato.pontointeligente.api.entities.Lancamento;
 @Transactional(readOnly = true)
 @NamedQueries({
 		@NamedQuery(name = "LancamentoRepository.findByFuncionarioId", query = "SELECT lanc FROM Lancamento lanc WHERE lanc.funcionario.id = :funcionarioId") })
-public interface LancamentoRepository extends JpaRepository<Lancamento, Long>{
-	
+public interface LancamentoRepository extends JpaRepository<Lancamento, Long> {
+
 	List<Lancamento> findByFuncionarioId(@Param("funcionarioId") Long funcionarioId);
-	
+
 	Page<Lancamento> findByFuncionarioId(@Param("funcionarioId") Long funcionarioId, Pageable pageable);
 
 }
